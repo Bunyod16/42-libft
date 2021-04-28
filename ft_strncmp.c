@@ -6,12 +6,11 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/27 13:23:57 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/04/27 18:49:39 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/04/28 13:22:32 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 unsigned int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

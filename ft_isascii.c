@@ -1,24 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/28 12:50:05 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/04/28 14:16:52 by bshamsid         ###   ########.fr       */
+/*   Created: 2021/04/28 13:46:33 by bshamsid          #+#    #+#             */
+/*   Updated: 2021/04/28 14:04:35 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-#include <string.h>
-
-unsigned int	ft_strncmp(const char *s1, const char *s2, size_t n);
-int				ft_isalpha(int c);
-int				ft_isdigit(int c);
-int				ft_isalnum(int c);
-int				ft_isascii(int c);
-int				ft_isprint(int c);
-#endif
+int		ft_isascii(int c)
+{
+	return (c >= 0 && c <= 127);	
+}
