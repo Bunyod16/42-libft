@@ -1,11 +1,11 @@
-NAME = runme.a
+NAME = libft.a
 SRC = *.c libft.h
 
 all: $(NAME)
 
 $(NAME):
 	gcc -c -Wall -Werror -Wextra *.c
-	gcc -o *.o
+	ar -rc libft.a *.o
 
 clean:
 	rm -f *.o
