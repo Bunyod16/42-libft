@@ -6,14 +6,14 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/28 12:57:02 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/04/28 13:19:22 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/04/29 14:59:46 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isdigit(int c);
-int		ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalpha(int c);
 
-int		ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
 	return (ft_isdigit(c) || ft_isalpha(c));
 }

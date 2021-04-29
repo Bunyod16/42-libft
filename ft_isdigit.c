@@ -6,11 +6,11 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/28 12:00:17 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/04/28 12:42:41 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/04/29 15:01:03 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-	return( c >= '1' && c <= '9');
+	return (c >= '1' && c <= '9' );
 }
