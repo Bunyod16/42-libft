@@ -6,39 +6,37 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/28 14:18:35 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/04/29 15:59:48 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/04 21:39:07 by bunyod16         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-static int ft_isspace(const char *str)
+static int	ft_isspace(const char *str)
 {
 	return ((*str >= 8 && *str <= 13) || *str == 32 );
 }
 
-static int char_to_int(const char *str)
+static int	char_to_int(const char *str)
 {
-	int result;
+	int	res;
 
-	result = 0;
-
-	while (*str >= '1' || *str < '9')
+	res = 0;
+	while (*str >= '0' && *str <= '9')
 	{
-		result *= 10;
-		result = *str - '0';
+		res *= 10;
+		res = res + (*str - 48);
+		str++;
 	}
-	return (result);
+	return (res);
 }
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int sign;
-	int result;
+	int	sign;
+	int	result;
 
 	sign = 1;
 	result = 0;
-	while(ft_isspace(str) == 1)
+	while (ft_isspace(str) != 0)
 		str++;
 	if (*str == '+' || *str == '-')
 	{
@@ -46,8 +44,6 @@ int		ft_atoi(const char *str)
 			sign = sign * -1;
 		str++;
 	}
-	else
-	result = char_to_int(str);
-
-	return(result);
+	result = sign * char_to_int(str);
+	return (result);
 }
