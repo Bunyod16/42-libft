@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/28 12:50:05 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/05 16:57:52 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/06 12:59:47 by bunyod16         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,7 @@ int				ft_isascii(int c);
 int				ft_isprint(int c);
 int				ft_atoi(const char *str);
 size_t				ft_strlen(const char *s);
+size_t				ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsize);
+int				ft_toupper(int c);
+int				ft_tolower(int c);
 #endif

@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bunyod16 <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/05 16:45:33 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/06 12:18:50 by bunyod16         ###   ########.fr       */
+/*   Created: 2021/05/05 18:20:51 by bunyod16          #+#    #+#             */
+/*   Updated: 2021/05/06 12:18:08 by bunyod16         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stddef.h>
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlcpy(char *restrict dst,
+		const char *restrict src, size_t dstsize)
 {
 	size_t	count;
 
 	count = 0;
-	while (*s != '\0')
+	while (dstsize > count + 1 && *src != '\0')
 	{
-		s++;
+		*dst = *src;
+		dst++;
+		src++;
 		count++;
 	}
-	return (count);
+	*dst = '\0';
+	return (dstsize);
 }

@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bunyod16 <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/05 16:45:33 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/06 12:18:50 by bunyod16         ###   ########.fr       */
+/*   Created: 2021/05/06 12:41:41 by bunyod16          #+#    #+#             */
+/*   Updated: 2021/05/06 12:57:44 by bunyod16         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
 
-size_t	ft_strlen(const char *s)
+int	ft_toupper(int c)
 {
-	size_t	count;
-
-	count = 0;
-	while (*s != '\0')
-	{
-		s++;
-		count++;
-	}
-	return (count);
+	if(c >= 97 && c <= 122)
+		c = c - 32;
+	return (c);
 }

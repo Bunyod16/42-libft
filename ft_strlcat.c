@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bunyod16 <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/05 16:45:33 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/06 12:18:50 by bunyod16         ###   ########.fr       */
+/*   Created: 2021/05/06 14:05:33 by bunyod16          #+#    #+#             */
+/*   Updated: 2021/05/06 15:35:36 by bunyod16         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stddef.h>
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	count;
+size_t ft_strlen(const char *s);
 
-	count = 0;
-	while (*s != '\0')
+size_t	strlcat(char *restrict dst,const char *restrict src,
+size_t dstsize)
+{
+	while(*dst != '\0')
+		dst++;
+	buffer = dstsize - ft_strlen(dst);
+	while(*src != '\0' && buffer > 1)
 	{
-		s++;
-		count++;
-	}
-	return (count);
+		*dst = *src
+		dst++;
+		src++;
+		buffer--;	
+	} 
 }
