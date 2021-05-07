@@ -5,7 +5,8 @@
 int main(void)
 {
 	char *string = "Hello World";
-	char *c = "o";
-	char *res = ft_strchr(string,111);	
-	printf("%d",res[0]);
+	char *res = ft_strrchr(string,'\0');	
+	printf("%s\n",res-1);
+	res = ft_strrchr(string,10);
+	printf("%s",res-1);
 }
