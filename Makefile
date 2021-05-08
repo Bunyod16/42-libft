@@ -1,16 +1,28 @@
 NAME = libft.a
-SRC = *.c libft.h
+HEADER = $(NAME:.a=.h)
+SOURCES = $(filter-out $(BSOURCES), $(wildcard *.c))
+BSOURCES = $(wildcard *lst*.c)
+OBJECTS = $(SOURCES:.c=.o)
+BOBJECTS = $(BSOURCES:.c=.o)
+GCC = gcc -c -Wall -Wextra -Werror
+AR = ar rc
+RM = rm -f
 
 all: $(NAME)
 
-$(NAME):
-	gcc -c -Wall -Werror -Wextra *.c
-	ar -rc libft.a *.o
+$(NAME): $(OBJECTS)
+	$(AR) $@ $^
+
+bonus: $(OBJECTS) $(BOBJECTS)
+	$(AR) $(NAME) $^
+
+%.o: %.c $(HEADER)
+	$(GCC) $<
 
 clean:
-	rm -f *.o
+	$(RM) $(OBJECTS) $(BOBJECTS)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
