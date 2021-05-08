@@ -17,7 +17,7 @@ size_t	ft_strlcpy(char *restrict dst,
 {
 	size_t	count;
 
-	if (size < strlen(src))
+	if (dstsize < ft_strlen(src))
 		return (dstsize);
 	count = 0;
 	while (dstsize > count && *src != '\0')
