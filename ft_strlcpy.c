@@ -1,4 +1,4 @@
-i/* ************************************************************************** */
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
@@ -16,17 +16,20 @@ size_t	ft_strlcpy(char *restrict dst,
 		const char *restrict src, size_t dstsize)
 {
 	size_t	count;
+	const char	*copsrc;
 
-	if (dstsize < ft_strlen(src))
-		return (dstsize);
-	count = 0;
-	while (dstsize > count && *src != '\0')
+	if (!dst || !src)
+		return (0);
+	count = dstsize;
+	copsrc = src;
+	if (dstsize != 0)
 	{
-		*dst = *src;
-		dst++;
-		src++;
-		count++;
+		while (--count && *src)
+			*dst++ = *src++;
+		if (count)
+			*dst++ = *src++;
 	}
-	*dst = '\0';
-	return (dstsize);
+	if (count == 0 && dstsize != 0)
+		*dst = '\0';
+	return (ft_strlen(copsrc));
 }
