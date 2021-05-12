@@ -6,7 +6,7 @@
 /*   By: bunyod16 <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 15:15:35 by bunyod16          #+#    #+#             */
-/*   Updated: 2021/05/08 22:29:58 by bunyod16         ###   ########.fr       */
+/*   Updated: 2021/05/12 13:11:52 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char *last;
-	char rep;
+	char	*last;
+	char	rep;
 
 	rep = (char)c;
 	last = NULL;
