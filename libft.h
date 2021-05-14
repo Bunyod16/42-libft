@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/28 12:50:05 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/13 12:29:58 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/14 15:04:36 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stddef.h>
 # include <stdlib.h>
+char			*ft_strdup(char const *s1);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
@@ -36,5 +37,6 @@ void			*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
 void			*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
 void			*ft_memmove(void *dst, const void *src, size_t len);
 void			*ft_memchr(const void *s, int c, size_t n);
-void			*calloc(size_t count, size_t size);
+void			*ft_calloc(size_t count, size_t size);
+char			*ft_substr(char const *s, unsigned int start, size_t len);
 #endif
