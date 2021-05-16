@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 13:46:10 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/16 01:52:05 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/16 19:38:29 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	if (ft_strlen(s) < start || !len)
 		return (ft_strdup(""));
+	if (len > ft_strlen(s))
+		len = ft_strlen(s);
 	sub = (char *)malloc(sizeof(char)*(len+1));
 	if (!sub)
 		return (NULL);
