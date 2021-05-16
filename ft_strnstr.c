@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/10 18:29:54 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/15 12:11:43 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/17 03:07:24 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	count;
-	size_t length;
+	size_t	length;
 
 	count = 0;
 	length = len;
@@ -24,7 +24,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	while (len-- > 0 && *haystack)
 	{
 		if (*haystack == *needle)
-			if(ft_strncmp(needle,haystack,ft_strlen(needle)) == 0)
+			if (ft_strncmp(needle, haystack, ft_strlen(needle)) == 0)
 				if (count + ft_strlen(needle) <= length)
 					return ((char *)haystack);
 		count++;

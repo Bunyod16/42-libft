@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 12:31:51 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/16 15:29:13 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/17 03:10:00 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	if (!ft_strlen(s1) || !ft_strlen(s2))
 		return (ft_strdup(""));
-	string = (char *)malloc(sizeof(char)*(ft_strlen(s1)+ft_strlen(s2)+1));
+	string = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!string)
 		return (NULL);
-	ft_bzero(string,(ft_strlen(s1)+ft_strlen(s2)+1));
+	ft_bzero(string, (ft_strlen(s1) + ft_strlen(s2) + 1));
 	i = 0;
 	while (*s1)
 		string[i++] = *s1++;
 	while (*s2)
 		string[i++] = *s2++;
 	return (string);
-
 }

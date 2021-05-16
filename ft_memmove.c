@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 20:30:06 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/13 11:45:49 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/17 04:07:33 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		return (dst);
 	orig = dst;
 	if (src > dst)
-		while(len--)
+		while (len--)
 			*(unsigned char *)(dst++) = *(unsigned char *)(src++);
 	else
-		while(len--)
-			*(unsigned char *)(dst+len) = *(unsigned char *)(src+len);
+		while (len--)
+			*(unsigned char *)(dst + len) = *(unsigned char *)(src + len);
 	return (orig);
 }
