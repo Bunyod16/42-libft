@@ -6,13 +6,13 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 14:56:46 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/12 19:09:32 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/14 15:58:45 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	while (n--)
 	{

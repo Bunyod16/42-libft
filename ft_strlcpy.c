@@ -6,14 +6,14 @@
 /*   By: bunyod16 <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/05 18:20:51 by bunyod16          #+#    #+#             */
-/*   Updated: 2021/05/12 13:11:30 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/14 15:57:36 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *restrict dst,
-		const char *restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *dst,
+		const char *src, size_t dstsize)
 {
 	size_t		count;
 	const char	*copsrc;
