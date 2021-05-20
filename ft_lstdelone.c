@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 20:51:56 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/19 22:29:22 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/20 15:54:54 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {	
-	if(lst)
+	if (lst)
 	{
 		del(lst->content);
 		free(lst);

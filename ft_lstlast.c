@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 17:33:24 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/19 17:44:30 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/20 15:51:18 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
 		return (NULL);
-	while(lst->next)
+	while (lst->next)
 	{
 		lst = lst->next;
 	}
-	return(lst);
+	return (lst);
 }

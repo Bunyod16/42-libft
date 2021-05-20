@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 00:49:43 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/20 00:56:35 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/20 15:52:08 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	while(lst)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;

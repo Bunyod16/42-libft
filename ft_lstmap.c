@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 00:57:04 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/20 15:25:11 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/20 15:54:07 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *temp;
-	t_list *res;
-	int start;
+	t_list	*temp;
+	t_list	*res;
+	int		start;
 
 	start = 1;
 	res = NULL;

@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 16:44:54 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/19 17:32:44 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/20 15:54:27 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 int	ft_lstsize(t_list *lst)
 {
 	int	i;
-	
+
 	i = 0;
 	while (lst)
 	{
 		i++;
 		lst = lst->next;
 	}
-	return(i);
+	return (i);
 }

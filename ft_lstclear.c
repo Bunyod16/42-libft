@@ -6,7 +6,7 @@
 /*   By: bshamsid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 22:20:01 by bshamsid          #+#    #+#             */
-/*   Updated: 2021/05/20 00:48:26 by bshamsid         ###   ########.fr       */
+/*   Updated: 2021/05/20 15:51:48 by bshamsid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *first;
-	t_list *copy;
+	t_list	*first;
+	t_list	*copy;
 
 	first = *lst;
 	while (first)
 	{
 		copy = first->next;
-		ft_lstdelone(first,del);
+		ft_lstdelone(first, del);
 		first = copy;
 	}
 	*lst = NULL;
